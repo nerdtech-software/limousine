@@ -1,25 +1,13 @@
-import React, { useState } from "react";
-import Navbar from "./Navbar";
+import React from "react";
 import { Link } from "react-router-dom";
-import Whychoose from "./Whychoose";
 import Faq from "./Faq";
+import Navbar from "./Navbar";
+import Whychoose from "./Whychoose";
 
 function Vehicle() {
   // Image data for the slider
-  const sliderImages = [
-    "https://images.unsplash.com/photo-1583668925503-7fcc6606934c?q=80&w=2847&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?q=80&w=2847&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?q=80&w=2847&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1524041259334-1c0b7982f84d?q=80&w=2847&auto=format&fit=crop",
-  ];
-
   // State to track the active image index
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Function to handle dot click
-  const handleDotClick = (index) => {
-    setCurrentImageIndex(index);
-  };
 
   return (
     <>
@@ -37,7 +25,7 @@ function Vehicle() {
         </div>
         <img
           src="https://images.pexels.com/photos/2127733/pexels-photo-2127733.jpeg?auto=compress&cs=tinysrgb&w=800"
-          alt="Image with text overlay"
+          alt=" text overlay"
         />
       </div>
       <br />
@@ -224,32 +212,8 @@ function Vehicle() {
   );
 }
 
-// Inline Styles for Slider
-const sliderContainerStyles = {
-  textAlign: "center",
-  marginTop: "30px",
-};
 
-const imageStyles = {
-  width: "100%",
-  maxWidth: "600px",
-  height: "auto",
-  borderRadius: "10px",
-};
 
-const dotsContainerStyles = {
-  display: "flex",
-  justifyContent: "center",
-  marginTop: "10px",
-};
 
-const dotStyles = {
-  height: "12px",
-  width: "12px",
-  margin: "0 5px",
-  borderRadius: "50%",
-  cursor: "pointer",
-  transition: "background-color 0.3s ease",
-};
 
 export default Vehicle;

@@ -333,6 +333,16 @@ h1{
   margin: auto;
   padding: 23px;
 }
+.footerimg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 70%;
+  
+}
+
+
 .carscontent p{
   margin-top: 1rem;
 }

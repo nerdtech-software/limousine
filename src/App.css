@@ -1,0 +1,550 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: rgb(255, 255, 255);
+}
+
+h1{
+  font-weight: 600;
+}
+/* .form Container */
+.form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  line-height: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Input Field Styling */
+.form div {
+  margin-bottom: 15px;
+}
+
+.form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+.formSection{
+  background-color: #fff;
+}
+.form-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 34px;
+  text-align:left ;
+  /* align-items: center ; */
+}
+.form-content h1,h5{
+  text-transform: uppercase;
+}
+.form-content i{
+  font-size: 34px;
+}
+
+.form input,
+.form select,
+.form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form input:focus,
+.form select:focus {
+  outline: none;
+  border-color: #966d13;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Button Styling */
+.form button {
+  background: #966d13;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form button:hover {
+  background: #854520;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+
+.formcont{
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 37vh!important;
+    overflow: hidden;
+}
+  .form {
+    padding: 15px;
+  }
+
+  .form label {
+    font-size: 14px;
+  }
+
+  .form input,
+  .form select,
+  .form button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .form button {
+    font-size: 16px;
+  }
+}
+
+
+/* Container for the image and overlay */
+.image-container {
+  position: relative;
+  width: 100%; /* Full width */
+  height: 70vh; /* 70% of the viewport height */
+  overflow: hidden;
+}
+
+/* Image to cover the container */
+.image-container img {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height of the container */
+  object-fit: cover; /* Ensures the image covers the entire container */
+  display: block; /* Remove any gaps below the image */
+}
+
+/* Dark overlay that covers the image */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Heading style */
+.overlay h1 {
+  font-size: 4rem;
+  margin: 0;
+  font-weight: bold;
+}
+.contnet{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Paragraph style */
+.overlay p {
+  font-size: 1.2rem;
+  margin: 10px 0 0;
+}
+.carContainer{
+  background-color: #e2e2e2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 1.5rem; /* Smaller heading on mobile */
+  }
+
+  .overlay p {
+    font-size: 1rem; /* Smaller paragraph on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay h1 {
+    font-size: 1.2rem; /* Even smaller heading for very small screens */
+  }
+
+  .overlay p {
+    font-size: 0.9rem; /* Even smaller paragraph for very small screens */
+  }
+}
+
+
+.quantity-section {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.quantity-section label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-controls button {
+  background-color: #966d13;
+  color: #fff;
+  border: none;
+  padding: 5px 15px;
+  font-size: 18px;
+  width: 23%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 4px;
+}
+
+.quantity-controls button:hover {
+  background-color: #966d13;
+}
+
+.quantity-controls input[type="number"] {
+  width: 60px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+.quantity-controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .best-section-img img {
+    width: 100%!important;
+    margin-bottom: 2rem!important;
+
+}
+  .beforecard{
+    margin-bottom: 3rem;
+  }
+  .choose-icon {
+  
+    margin-bottom: 2rem;
+}
+  .serviceCard{
+    margin-bottom: 3rem;
+  }
+  .right-img img {
+    width: 100%!important;
+}
+.rightvehicle h1 {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+  .middleimage img {
+    width: 100%!important;
+}
+  .bookbtn {
+    width: 46%!important;
+    margin-bottom: 3rem!important;
+    background-color: rgb(143, 106, 38);
+    color: #fff;
+    margin: auto;
+}
+
+.middlecontent h2 {
+  font-weight: 600;
+  font-size: 21px;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+  .carimage {
+    width: 100%!important;
+}
+
+
+  .quantity-controls button {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .quantity-controls input[type="number"] {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .quantity-section label {
+    font-size: 14px;
+  }
+
+  .quantity-controls button {
+    padding: 8px 10px;
+    font-size: 16px;
+  }
+
+  .quantity-controls input[type="number"] {
+    font-size: 14px;
+  }
+}
+.carscontent{
+  background: #fff;
+  display: flex
+;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 23px;
+}
+.carscontent p{
+  margin-top: 1rem;
+}
+.carbox{
+  display: flex;
+  gap: 1px;
+      justify-content: center;
+      margin: auto;
+      align-items: center;
+      padding: 39px;
+}
+.carimage{
+  width: 150px;
+}
+.mainbox{
+  margin-left: 15rem;
+}
+
+.add-car-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.car-form-container {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.car-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.car-input-field,
+.car-file-input,
+.car-textarea {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.car-submit-btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.car-submit-btn:hover {
+  background-color: #218838;
+}
+
+.table-responsive {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+}
+.middleimage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+@media (max-width: 767px) {
+  .table th, .table td {
+    font-size: 14px;
+  }
+}
+.middleimage img{
+  width: 90%;
+}
+.middlecontent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+ margin: auto;
+}
+.middlecontent h2{
+  font-weight:600;
+}
+.points{
+  display: flex;
+  line-height: 26px;
+  gap: 10px;
+}
+.middlesection{
+  background-color: #321507;
+  padding: 45px;
+  color: #fff;
+}
+.pointsicon i{
+  color: rgb(143, 106, 38);
+}
+.pointsContent h5{
+  font-size: 16px;
+}
+.bookbtn{
+  width: 20%;
+  background-color: rgb(143, 106, 38);
+  color: #fff;
+}
+.right-img img{
+  width: 70%;
+}
+.right-img {
+  display: flex
+  ;
+      margin: auto;
+      justify-content: center;
+      align-items: center;
+}
+.service-btn{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.servebtn{
+  background-color: rgb(190, 128, 12);
+  padding: 12px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.choosecard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.choose-icon i{
+  font-size: 21px;
+  background: #eddcc6;
+  border-radius: 50%;
+  padding: 15px;
+  color: #a67c45;
+}
+.choose-icon{
+  background: rgb(236, 236, 236);
+  padding: 21px;
+  border-radius: 12px;
+}
+.best-section-content span{
+  font-weight: bold;
+  font-size: 20px;
+}
+.best-section-img img{
+  width: 70%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+.secondsection{
+  background-color:#321507 ;
+  padding: 40px;
+  color: #fff ;
+}
+.middlesections ul li{
+  list-style: none;font-weight: 600;
+}
+.serviceheading{
+  background-color: rgb(243, 243, 243);
+  color: #070707;
+}
+.sericesmore{
+  background-color: #321507;
+  padding: 34px;
+  color: #fff;
+}
+.sericesmore .choose-icon{
+  background-color: rgb(173, 127, 48);
+}
+.choose-icon h4{
+  font-weight: 600;
+}
+.contact-section {
+  padding: 2rem 0;
+}
+.contact-details i {
+  font-size: 1.5rem;
+  color: #6c757d;
+  margin-right: 10px;
+}
+.contact-details p {
+  margin-bottom: 10px;
+}
+.contact-map {
+  height: 200px;
+  border: none;
+}
+.btn-custom {
+  background-color: #8c6e4d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+.btn-custom:hover {
+  background-color: #705537;
+}

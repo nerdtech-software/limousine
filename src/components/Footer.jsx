@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="footer-logo">
               <h2>Raja Luxury Limousine</h2>
             </div>
-            <img className="footerimg" src={logo} alt=""  />
+            <img className="footerimg" src={logo} alt="/"  />
             <p>
               We accomplish our goals with a dedicated team of professionals
               whose main priority is complete customer satisfaction. We provide

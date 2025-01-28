@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";
 
 const BookNow = () => {
     const formStyle={
@@ -101,7 +100,7 @@ const BookNow = () => {
 
   return (
   <>
-  <Navbar/>
+ 
   <div className="image-container">
         <div className="overlay">
           <div className="contnet">

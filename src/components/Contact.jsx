@@ -1,6 +1,5 @@
-import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import Navbar from './Navbar';
+import React, { useRef } from 'react';
 
 function Contact() {
   const form = useRef();
@@ -29,7 +28,7 @@ function Contact() {
 
   return (
     <>
-      <Navbar />
+      
       <div className="container contact-section">
         <div className="row">
           {/* Left Column */}
@@ -51,6 +50,7 @@ function Contact() {
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.83543450941!2d-122.41941548468138!3d37.77492977975879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064cb466f4f%3A0x1cb9e2e1e93bbdb7!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1685619738271!5m2!1sen!2sin"
               allowFullScreen=""
               loading="lazy"
+              title='map'
             ></iframe>
           </div>
 

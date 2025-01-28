@@ -1,24 +1,23 @@
-import React, { useEffect } from 'react';
-import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
-import AOS from 'aos';  // Import AOS
+import AOS from 'aos'; // Import AOS
 import 'aos/dist/aos.css'; // Import AOS styles
+import "bootstrap/dist/css/bootstrap.min.css";
+import React, { useEffect } from 'react';
+import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
+import './App.css';
 
 // Import your components
-import Carcards from './components/Carcards';
-import Navbar from './components/Navbar';
-import Adminpanel from './components/Adminpanel';
-import Homepage from './components/Homepage';
-import Addcars from './components/Addcars';
-import BookList from './components/BookList';
-import Edithomeimage from './components/Edithomeimage';
-import BookNow from './components/BookNow';
-import Footer from './components/Footer';
-import Vehicle from './components/Vehicle';
-import Services from './components/Services';
 import Aboutus from './components/Aboutus';
+import Addcars from './components/Addcars';
+import Adminpanel from './components/Adminpanel';
+import BookList from './components/BookList';
+import BookNow from './components/BookNow';
 import Contact from './components/Contact';
+import Edithomeimage from './components/Edithomeimage';
+import Footer from './components/Footer';
+import Homepage from './components/Homepage';
+import Navbar from './components/Navbar';
+import Services from './components/Services';
+import Vehicle from './components/Vehicle';
 
 function App() {
   useEffect(() => {
@@ -28,27 +27,78 @@ function App() {
     });
   }, []); // Runs only once when the component is mounted
 
-  return (
-    <div className="App">
-      <Router>
-        {/* <Navbar/> */}
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/cars" element={<Carcards />} />
-          <Route path="/aboutus" element={<Aboutus/>} />
-          <Route path="/contactus" element={<Contact/>} />
-          <Route path="/admin" element={<Adminpanel />} />
-          <Route path="/admin/add-cars" element={<Addcars />} />
-          <Route path="/admin/booklist" element={<BookList />} />
-          <Route path="/admin/edithomeimage" element={<Edithomeimage />} />
-          <Route path="/booknow" element={<BookNow />} />
-          <Route path="/vehicle" element={<Vehicle />} />
-          <Route path="/services" element={<Services/>} />
-        </Routes>
+    const Layout = () => (
+      <>
+        <Navbar />
+        <Outlet />
         <Footer />
-      </Router>
-    </div>
-  );
-}
+      </>
+    );
+  
+    const appRouter = createBrowserRouter([
+     {
+      path:"/",
+      element:<Layout/>,
+      children:[
+        {
+         path:"",
+         element:<Homepage/>
+        },
+        {
+         path:"/aboutus",
+         element:<Aboutus/>
+        },
+        {
+         path:"/services",
+         element:<Services/>
+        },
+        {
+         path:"/contactus",
+         element:<Contact/>
+        },
+        {
+         path:"/booknow",
+         element:<BookNow/>
+        },
+        {
+         path:"/vehicle",
+         element:<Vehicle/>
+        },
+        {
+          path:"/admin",
+          element:<Adminpanel/>
+        },
+        {
+          path:"/admin/add-cars",
+          element:<Addcars/>
+        },
+        {
+          path:"/admin/booklist",
+          element:<BookList/>
+        },
+        {
+          path:"/admin/edithomeimage",
+          element:<Edithomeimage/>
+        },
+        {
+          path:"/admin/vehicle",
+          element:<Vehicle/>
+        },
+        {
+          path:"/admin/services",
+          element:<Services/>
+        }
+        
+      ]
+     }
+    ]);
+    return (
+      <>
+        <RouterProvider router={appRouter} />
+      </>
+    );
+  }
+  
+
 
 export default App;

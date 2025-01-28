@@ -75,7 +75,7 @@ function Addcars() {
 
         {/* Main Content */}
         <div className="main-content">
-          {/* Navbar */}
+        
           <nav className="navbar navbar-expand-lg navbar-light bg-light">
             <div className="navbar-left">
               <button className="toggle-sidebar btn btn-primary" onClick={toggleSidebar}>
@@ -84,7 +84,7 @@ function Addcars() {
             </div>
             <div className="navbar-right">
               <span>Admin</span>
-              <a href="#" className="logout btn btn-danger ml-3">Logout</a>
+              <a href="/" className="logout btn btn-danger ml-3">Logout</a>
             </div>
           </nav>
 

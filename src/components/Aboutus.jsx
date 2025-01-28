@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "./Navbar";
 
 
 function Aboutus() {
@@ -8,7 +7,7 @@ function Aboutus() {
 
   return (
     <>
-      <Navbar />
+    
       <div className="image-container">
         <div className="overlay">
           <div className="contnet">

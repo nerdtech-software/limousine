@@ -1,21 +1,19 @@
 import React from 'react'
-import Homeimage from './Homeimage'
+import BeforeBooking from './BeforeBooking'
 import BookingForm from './BookingForm'
-import Navbar from './Navbar'
 import Carcards from './Carcards'
+import Faq from './Faq'
+import Homeimage from './Homeimage'
+import Limoservice from './Limoservice'
 import MiddleContent from './MiddleContent'
 import Rightvehicle from './Rightvehicle'
-import Limoservice from './Limoservice'
-import Whychoose from './Whychoose'
 import SecondService from './SecondService'
-import BeforeBooking from './BeforeBooking'
-import Footer from './Footer'
-import Faq from './Faq'
+import Whychoose from './Whychoose'
 
 function Homepage() {
   return (
     <>
-    <Navbar/>
+
     <Homeimage/>
     <BookingForm/>
     <Carcards/>

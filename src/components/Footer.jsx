@@ -40,27 +40,27 @@ const Footer = () => {
             <h5>Vehicles</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <a href="/" className="text-white text-decoration-none">
                   Sedan
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <a href="/" className="text-white text-decoration-none">
                   SUV
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <a href="/" className="text-white text-decoration-none">
                   Luxury Sprinter Van
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <a href="/" className="text-white text-decoration-none">
                   Stretch Limo
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <a href="/" className="text-white text-decoration-none">
                   Stretch SUV
                 </a>
               </li>
@@ -72,27 +72,27 @@ const Footer = () => {
             <h5>Quick Links</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <a href="/" className="text-white text-decoration-none">
                   About
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <a href="/" className="text-white text-decoration-none">
                   Blog
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <a href="/" className="text-white text-decoration-none">
                   Reservation
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <a href="/" className="text-white text-decoration-none">
                   FAQ
                 </a>
               </li>
               <li>
-                <a href="#" className="text-white text-decoration-none">
+                <a href="/" className="text-white text-decoration-none">
                   Privacy Policy
                 </a>
               </li>
@@ -105,21 +105,21 @@ const Footer = () => {
           <p>&copy; 2024, All Rights Reserved by Raja Luxury</p>
           <div className="social-icons d-flex justify-content-center mt-2">
             <a
-              href="#"
+              href="/"
               className="text-white me-3"
               style={{ fontSize: "20px" }}
             >
               <FaFacebookF />
             </a>
             <a
-              href="#"
+              href="/"
               className="text-white me-3"
               style={{ fontSize: "20px" }}
             >
               <FaInstagram />
             </a>
             <a
-              href="#"
+              href="/"
               className="text-white"
               style={{ fontSize: "20px" }}
             >

@@ -105,7 +105,7 @@ const BookingForm = () => {
           </p>
           <div className="row formcont" >
             <div className="col-md-2" style={{display:"flex",justifyContent:"center",alignItems:"center "}}>
-            <i class="fa-solid fa-headset" style={{color:"#c37209;"}}></i>
+            <i className="fa-solid fa-headset" style={{color:"#c37209"}}></i>
             </div>
             <div className="col-md-4" style={{lineHeight:"9px"}}>
             <p>Phone: 0123 458 789 </p>

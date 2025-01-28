@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Sidebar from './Sidebar';
 import '../admin.css';
+import Sidebar from './Sidebar';
 
 function Adminpanel() {
   const [isSidebarVisible, setSidebarVisible] = useState(true);
@@ -28,7 +28,7 @@ function Adminpanel() {
           </div>
           <div className="navbar-right">
             <span>Admin</span>
-            <a href="#" className="logout">Logout</a>
+            <a href="/" className="logout">Logout</a>
           </div>
         </nav>
 

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Faq from "./Faq";
-import Navbar from "./Navbar";
 import Whychoose from "./Whychoose";
 
 function Vehicle() {
@@ -11,7 +10,7 @@ function Vehicle() {
 
   return (
     <>
-      <Navbar />
+
       <div className="image-container">
         <div className="overlay">
           <div className="contnet">
@@ -177,16 +176,16 @@ function Vehicle() {
         
                    <ul>
                     <li>
-                    <i class="fa-solid fa-plus"></i>  Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit.
+                    <i className="fa-solid fa-plus"></i>  Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit.
                     </li>
                     <li>
-                    <i class="fa-solid fa-plus"></i>  Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing.
+                    <i className="fa-solid fa-plus"></i>  Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur adipisicing.
                     </li>
                     <li>
-                    <i class="fa-solid fa-plus"></i>  Lorem ipsum dolor sit amet, consectetur
+                    <i className="fa-solid fa-plus"></i>  Lorem ipsum dolor sit amet, consectetur
                     </li>
                     <li>
-                    <i class="fa-solid fa-plus"></i>  Lorem ipsum dolor sit amet, consectetur
+                    <i className="fa-solid fa-plus"></i>  Lorem ipsum dolor sit amet, consectetur
                     </li>
                     
                    </ul>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Sidebar from './Sidebar';
 import '../admin.css';
+import Sidebar from './Sidebar';
 
 function Edithomeimage() {
   const [isSidebarVisible, setSidebarVisible] = useState(true);
@@ -69,7 +69,7 @@ function Edithomeimage() {
             </div>
             <div className="navbar-right">
               <span>Admin</span>
-              <a href="#" className="logout btn btn-danger ml-3">Logout</a>
+              <a href="/" className="logout btn btn-danger ml-3">Logout</a>
             </div>
           </nav>
 

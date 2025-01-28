@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
-import Whychoose from "./Whychoose";
 import Faq from "./Faq";
 
 
@@ -37,10 +35,7 @@ function Services() {
           padding: '20px',
         };
       
-        const headingStyle = {
-          fontSize: '3rem',
-          fontWeight: 'bold',
-        };
+        
       
         const paragraphStyle = {
           fontSize: '1.25rem',
@@ -55,15 +50,13 @@ function Services() {
     
     // State to track the active image index
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    console.log(setCurrentImageIndex)
 
     // Function to handle dot click
-    const handleDotClick = (index) => {
-        setCurrentImageIndex(index);
-    };
-
+   
     return (
         <>
-            <Navbar />
+           
             <div className="image-container">
                 <div className="overlay">
                     <div className="contnet">
@@ -85,7 +78,7 @@ function Services() {
                 </div>
                 <img
                     src={sliderImages[currentImageIndex]} // Display image based on current index
-                    alt="Image with text overlay"
+                    alt=" text overlay"
                 />
             </div>
 

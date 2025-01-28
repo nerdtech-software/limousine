@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import Sidebar from './Sidebar';
+import React, { useEffect, useState } from 'react';
 import '../admin.css';
+import Sidebar from './Sidebar';
 
 function BookList() {
   const [isSidebarVisible, setSidebarVisible] = useState(true);
@@ -48,7 +48,7 @@ function BookList() {
           </div>
           <div className="navbar-right">
             <span>Admin</span>
-            <a href="#" className="logout">Logout</a>
+            <a href="/" className="logout">Logout</a>
           </div>
         </nav>
 
